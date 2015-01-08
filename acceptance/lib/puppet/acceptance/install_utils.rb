@@ -27,6 +27,7 @@ module Puppet
       #   command is present before installing package.  (Default false)
       # @return true
       def install_packages_on(hosts, package_hash, options = {})
+        return true if hosts == nil
         check_if_exists = options[:check_if_exists]
         hosts = [hosts] unless hosts.kind_of?(Array)
         hosts.each do |host|
