@@ -1,5 +1,5 @@
 test_name 'puppet module search should print a reasonable message on communication errors'
-
+confine :to, :masterless => false
 confine :except, :platform => 'solaris'
 
 step 'Setup'

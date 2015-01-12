@@ -1,4 +1,5 @@
 test_name "puppet module list (with no installed modules)"
+confine :to, :masterless => false
 
 
 step "List the installed modules"

@@ -1,4 +1,5 @@
 test_name 'puppet module changes (on an unmodified module)'
+confine :to, :masterless => false
 
 hosts.each do |host|
   skip_test "skip tests requiring forge certs on solaris and aix" if host['platform'] =~ /solaris/

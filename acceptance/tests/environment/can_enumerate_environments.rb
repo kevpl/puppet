@@ -1,4 +1,5 @@
 test_name "Can enumerate environments via an HTTP endpoint"
+confine :to, :masterless => false
 
 def master_port(agent)
   setting_on(agent, "agent", "masterport")

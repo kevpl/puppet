@@ -1,3 +1,5 @@
+confine :to, :masterless => false
+
 require 'puppet/acceptance/common_utils'
 extend Puppet::Acceptance::CAUtils
 require 'puppet/acceptance/classifier_utils'

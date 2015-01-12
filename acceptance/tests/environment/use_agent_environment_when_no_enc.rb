@@ -1,4 +1,5 @@
 test_name "Agent should use agent environment if there is no enc-specified environment"
+confine :to, :masterless => false
 
 testdir = create_tmpdir_for_user master, 'use_agent_env'
 

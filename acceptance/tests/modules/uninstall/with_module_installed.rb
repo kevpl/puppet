@@ -1,4 +1,6 @@
 test_name "puppet module uninstall (with module installed)"
+confine :to, :masterless => false
+
 
 teardown do
   on master, "rm -rf #{master['distmoduledir']}/crakorn"

@@ -1,4 +1,6 @@
 test_name "puppet module uninstall (with active dependency)"
+confine :to, :masterless => false
+
 
 step "Setup"
 apply_manifest_on master, <<-PP

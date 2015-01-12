@@ -1,4 +1,5 @@
 test_name "Use environments from the environmentpath"
+confine :to, :masterless => false
 require 'puppet/acceptance/classifier_utils'
 extend Puppet::Acceptance::ClassifierUtils
 

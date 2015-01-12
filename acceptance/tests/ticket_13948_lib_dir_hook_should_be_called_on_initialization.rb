@@ -1,4 +1,5 @@
 test_name "the $libdir setting hook is called on startup"
+confine :to, :masterless => false
 
 require 'puppet/acceptance/temp_file_utils'
 

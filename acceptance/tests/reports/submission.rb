@@ -1,4 +1,5 @@
 test_name "Report submission"
+confine :to, :masterless => false
 
 if master.is_pe?
   require "time"
