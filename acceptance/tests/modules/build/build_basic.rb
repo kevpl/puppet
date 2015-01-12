@@ -1,3 +1,4 @@
+confine :to, :masterless => false
 begin test_name "puppet module build (basic)"
 
 step 'Setup'

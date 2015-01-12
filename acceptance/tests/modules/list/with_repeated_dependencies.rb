@@ -1,4 +1,5 @@
 test_name "puppet module list (with repeated dependencies)"
+confine :to, :masterless => false
 
 teardown do
   on master, "rm -rf #{master['distmoduledir']}/crakorn"

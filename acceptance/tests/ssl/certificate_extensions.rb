@@ -1,3 +1,5 @@
+confine :to, :masterless => false
+
 require 'puppet/acceptance/common_utils'
 require 'puppet/acceptance/temp_file_utils'
 extend Puppet::Acceptance::CAUtils

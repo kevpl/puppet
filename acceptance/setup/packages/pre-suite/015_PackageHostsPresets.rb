@@ -1,4 +1,5 @@
-return if master == nil
+confine :to, :masterless => false
+
 if master['platform'] =~ /debian|ubuntu/
   master.uses_passenger!
 elsif master['platform'] =~ /redhat|el|centos|scientific|fedora/

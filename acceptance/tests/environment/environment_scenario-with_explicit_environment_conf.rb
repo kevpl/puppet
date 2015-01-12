@@ -1,4 +1,5 @@
 test_name "Test a specific, existing directory environment with an explicit environment.conf file"
+confine :to, :masterless => false
 require 'puppet/acceptance/environment_utils'
 extend Puppet::Acceptance::EnvironmentUtils
 require 'puppet/acceptance/classifier_utils'

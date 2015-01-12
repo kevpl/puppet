@@ -1,4 +1,6 @@
 test_name "puppet module upgrade (to installed version)"
+confine :to, :masterless => false
+
 require 'puppet/acceptance/module_utils'
 extend Puppet::Acceptance::ModuleUtils
 

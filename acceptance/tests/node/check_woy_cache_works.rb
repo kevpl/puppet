@@ -4,6 +4,7 @@ require 'yaml'
 extend Puppet::Acceptance::TempFileUtils
 
 test_name "ticket #16753 node data should be cached in yaml to allow it to be queried"
+confine :to, :masterless => false
 
 node_name = "woy_node_#{SecureRandom.hex}"
 auth_contents = <<AUTHCONF

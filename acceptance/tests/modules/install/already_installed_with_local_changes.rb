@@ -1,4 +1,5 @@
 test_name "puppet module install (already installed with local changes)"
+confine :to, :masterless => false
 require 'puppet/acceptance/module_utils'
 extend Puppet::Acceptance::ModuleUtils
 

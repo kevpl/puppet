@@ -1,4 +1,5 @@
 test_name "puppet module install (with unnecessary dependency upgrade)"
+confine :to, :masterless => false
 require 'puppet/acceptance/module_utils'
 extend Puppet::Acceptance::ModuleUtils
 

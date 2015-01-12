@@ -1,4 +1,5 @@
 test_name 'ensure production environment created by master if missing'
+confine :to, :masterless => false
 
 testdir = create_tmpdir_for_user master, 'prod-env-created'
 

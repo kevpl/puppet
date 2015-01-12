@@ -1,4 +1,5 @@
 test_name "The source attribute"
+confine :to, :masterless => false
 require 'puppet/acceptance/module_utils'
 extend Puppet::Acceptance::ModuleUtils
 

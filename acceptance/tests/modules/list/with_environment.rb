@@ -1,4 +1,5 @@
 test_name 'puppet module list (with environment)'
+confine :to, :masterless => false
 require 'puppet/acceptance/module_utils'
 extend Puppet::Acceptance::ModuleUtils
 

@@ -1,4 +1,5 @@
 test_name "node_name_value should be used as the node name for puppet agent"
+confine :to, :masterless => false
 
 success_message = "node_name_value setting was correctly used as the node name"
 in_testdir = master.tmpdir('nodenamevalue')
