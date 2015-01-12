@@ -1,4 +1,5 @@
 test_name 'PUP-3755 Test an un-assigned broken environment'
+confine :to, :masterless => false
 
 step 'setup environments'
 
