@@ -1,4 +1,5 @@
 test_name "Lookup data using the hiera_hash parser function"
+confine :to, :masterless => false
 
 testdir = master.tmpdir('hiera')
 

@@ -1,4 +1,5 @@
 test_name "puppet module list (with invalid dependencies)"
+confine :to, :masterless => false
 
 teardown do
   on master, "rm -rf #{master['distmoduledir']}/thelock"

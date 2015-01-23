@@ -4,7 +4,7 @@
 # which fails because of the missing user and then correct their actions. They
 # expect that after correcting their actions, puppet will work correctly.
 test_name "Puppet manages its own configuration in a robust manner"
-
+confine :to, :masterless => false
 confine :except, :platform => 'fedora-19'
 
 skip_test "JVM Puppet cannot change its user while running." if @options[:is_puppetserver]

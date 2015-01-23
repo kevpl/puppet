@@ -1,4 +1,5 @@
 test_name "puppet module list (with modulepath)"
+confine :to, :masterless => false
 
 step "Setup"
 apply_manifest_on master, <<-PP

@@ -1,4 +1,5 @@
 test_name "Master should produce error if enc specifies a nonexistent environment"
+confine :to, :masterless => false
 require 'puppet/acceptance/classifier_utils.rb'
 extend Puppet::Acceptance::ClassifierUtils
 

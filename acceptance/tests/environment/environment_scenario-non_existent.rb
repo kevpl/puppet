@@ -1,4 +1,5 @@
 test_name "Test for an environment that does not exist"
+confine :to, :masterless => false
 require 'puppet/acceptance/environment_utils'
 extend Puppet::Acceptance::EnvironmentUtils
 require 'puppet/acceptance/classifier_utils'
